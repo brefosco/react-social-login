@@ -27,9 +27,9 @@ export default function SocialLogin() {
         setLoggedIn(true)
     }
 
-    let loginButtons = (
+    const loginButtons = (
         <>
-            <div style={{margin:'20px'}}>
+            <div style={{ margin: '20px' }}>
                 <GoogleLogin
                     clientId="{process.env.googleClientID}"
                     buttonText="Login"
@@ -38,7 +38,7 @@ export default function SocialLogin() {
                     cookiePolicy={'single_host_origin'}
                 />
             </div>
-            <div style={{margin:'20px'}}>
+            <div style={{ margin: '20px' }}>
                 <FacebookLogin
                     appId="{process.env.facebookClientID}"
                     autoload={true}
@@ -50,9 +50,9 @@ export default function SocialLogin() {
         </>
     )
 
-    let profileContent = (
+    const profileContent = (
         <Card style={{ backgroundColor: '#f4f4f4', }}>
-            <img style={{ width: '50px', height: '50px', borderRadius: '3px'}} src={imgUrl} alt={name} />
+            <img style={{ width: '50px', height: '50px', borderRadius: '3px' }} src={imgUrl} alt={name} />
             <CardTitle><p className="h5">Welcome, {name}</p></CardTitle>
             <CardText>Email: {email}</CardText>
         </Card>
