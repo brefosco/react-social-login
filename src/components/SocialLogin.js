@@ -20,6 +20,7 @@ export default function SocialLogin() {
     const componentClicked = () => {
         console.log('clicked')
     }
+    
     const responseFacebook = response => {
         setName(response.name)
         setEmail(response.email)
@@ -31,7 +32,7 @@ export default function SocialLogin() {
         <>
             <div style={{ margin: '20px' }}>
                 <GoogleLogin
-                    clientId="{process.env.googleClientID}"
+                    clientId={process.env.googleClientID}
                     buttonText="Login"
                     onSuccess={responseGoogle}
                     onFailure={responseGoogle}
@@ -40,7 +41,7 @@ export default function SocialLogin() {
             </div>
             <div style={{ margin: '20px' }}>
                 <FacebookLogin
-                    appId="{process.env.facebookClientID}"
+                    appId={process.env.facebookClientID}
                     autoload={true}
                     fields="name,email,picture"
                     onClick={componentClicked}
