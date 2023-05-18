@@ -1,6 +1,6 @@
 ## _Technical test - Create a React Social Login_ 
 
-Time tracked test for company Bret It 
+Technical time tracked challenge for company Bret It 
 
 Tech stack: 
 * React
@@ -13,6 +13,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn`
+
+Installs necessary packages
 
 ### `yarn start`
 
