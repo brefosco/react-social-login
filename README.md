@@ -1,6 +1,6 @@
-## _Technical test - Create a React Social Login_ 
+## _Technical test: Create a React Social Login_ 
 
-Technical time tracked challenge for company Bret It 
+Time tracked challenge for company Bret It 
 
 Tech stack: 
 * React
